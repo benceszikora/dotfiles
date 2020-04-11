@@ -26,5 +26,7 @@ alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout '
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 export HISTFILESIZE=
 export HISTSIZE=
