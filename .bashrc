@@ -9,6 +9,11 @@ function kns() {
     kubectl config set-context $(kubectl config current-context) --namespace=$1
 }
 
+function config {
+   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+}
+
+
 parse_git_branch() {
       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
   }
